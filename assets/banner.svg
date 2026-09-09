@@ -1,0 +1,209 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0d1b2a" />
+      <stop offset="100%" stop-color="#1b263b" />
+    </linearGradient>
+
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="50%" stop-color="#4facfe" />
+      <stop offset="100%" stop-color="#00c6ff" />
+    </linearGradient>
+
+    <linearGradient id="liquidGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00f5d4" />
+      <stop offset="100%" stop-color="#00bbf9" />
+    </linearGradient>
+
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f72585" />
+      <stop offset="100%" stop-color="#7209b7" />
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#4facfe" stroke-width="0.75" stroke-opacity="0.12" />
+      <circle cx="20" cy="20" r="1.5" fill="#00f2fe" fill-opacity="0.2" />
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.35; transform: scale(1); }
+      50% { opacity: 0.85; transform: scale(1.04); }
+    }
+    @keyframes scanline {
+      0% { transform: translateY(0px); opacity: 0.2; }
+      50% { opacity: 0.9; }
+      100% { transform: translateY(180px); opacity: 0.2; }
+    }
+    @keyframes liquidBubble {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-4px); }
+    }
+    @keyframes flowLine {
+      0% { stroke-dashoffset: 200; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes nodeBlink {
+      0%, 100% { fill: #00f2fe; r: 3; }
+      50% { fill: #f72585; r: 4.5; }
+    }
+    .pulse-elem {
+      animation: pulseGlow 4s ease-in-out infinite;
+      transform-origin: center;
+    }
+    .scanner {
+      animation: scanline 3s linear infinite;
+    }
+    .bubble {
+      animation: liquidBubble 2.5s ease-in-out infinite;
+    }
+    .flow-path {
+      stroke-dasharray: 10, 8;
+      animation: flowLine 12s linear infinite;
+    }
+    .node-pulse {
+      animation: nodeBlink 3s ease-in-out infinite;
+    }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1200" height="400" fill="url(#bgGrad)" rx="16" />
+  <rect width="1200" height="400" fill="url(#grid)" rx="16" />
+
+  <!-- Ambient Light Orbs -->
+  <circle cx="200" cy="180" r="140" fill="#00f2fe" opacity="0.08" filter="url(#glow)" class="pulse-elem" />
+  <circle cx="1000" cy="220" r="160" fill="#7209b7" opacity="0.12" filter="url(#glow)" class="pulse-elem" />
+  <circle cx="600" cy="100" r="120" fill="#4facfe" opacity="0.06" filter="url(#glow)" />
+
+  <!-- Abstract DNA / Sample Lineage Curves -->
+  <path class="flow-path" d="M 50 80 Q 250 20 450 120 T 850 100 T 1150 60" fill="none" stroke="#00f2fe" stroke-width="1.8" opacity="0.4" />
+  <path class="flow-path" d="M 50 320 Q 300 380 600 280 T 950 320 T 1150 290" fill="none" stroke="#f72585" stroke-width="1.8" opacity="0.35" style="animation-duration: 8s;" />
+
+  <!-- Left Side: Automated Cryo-Rack & Vials Illustration -->
+  <g transform="translate(70, 90)">
+    <rect x="0" y="0" width="180" height="200" rx="12" fill="#0e2238" stroke="#00f2fe" stroke-width="2" opacity="0.85" filter="url(#softGlow)" />
+    <rect x="10" y="10" width="160" height="180" rx="8" fill="#091829" stroke="#4facfe" stroke-width="1" opacity="0.6" />
+    <text x="90" y="-12" text-anchor="middle" fill="#00f2fe" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" letter-spacing="2">CRYO-STORAGE 81-WELL</text>
+
+    <!-- 3x3 Sample Well Tubes -->
+    <g transform="translate(25, 25)">
+      <circle cx="20" cy="20" r="15" fill="#1b3a5c" stroke="#4facfe" stroke-width="1.5" />
+      <circle cx="20" cy="20" r="11" fill="url(#liquidGrad)" class="bubble" />
+      <circle cx="65" cy="20" r="15" fill="#1b3a5c" stroke="#4facfe" stroke-width="1.5" />
+      <circle cx="65" cy="20" r="11" fill="url(#amberGrad)" class="bubble" />
+      <circle cx="110" cy="20" r="15" fill="#1b3a5c" stroke="#4facfe" stroke-width="1.5" />
+      <circle cx="110" cy="20" r="11" fill="url(#liquidGrad)" class="bubble" />
+
+      <circle cx="20" cy="70" r="15" fill="#1b3a5c" stroke="#4facfe" stroke-width="1.5" />
+      <circle cx="20" cy="70" r="11" fill="url(#liquidGrad)" class="bubble" />
+      <circle cx="65" cy="70" r="15" fill="#1b3a5c" stroke="#00f2fe" stroke-width="2.5" filter="url(#softGlow)" />
+      <circle cx="65" cy="70" r="11" fill="#ffffff" />
+      <circle cx="110" cy="70" r="15" fill="#1b3a5c" stroke="#4facfe" stroke-width="1.5" />
+      <circle cx="110" cy="70" r="11" fill="url(#amberGrad)" class="bubble" />
+
+      <circle cx="20" cy="120" r="15" fill="#1b3a5c" stroke="#4facfe" stroke-width="1.5" />
+      <circle cx="20" cy="120" r="11" fill="url(#amberGrad)" class="bubble" />
+      <circle cx="65" cy="120" r="15" fill="#1b3a5c" stroke="#4facfe" stroke-width="1.5" />
+      <circle cx="65" cy="120" r="11" fill="url(#liquidGrad)" class="bubble" />
+      <circle cx="110" cy="120" r="15" fill="#1b3a5c" stroke="#4facfe" stroke-width="1.5" />
+      <circle cx="110" cy="120" r="11" fill="url(#liquidGrad)" class="bubble" />
+    </g>
+
+    <line x1="5" y1="15" x2="175" y2="15" stroke="#f72585" stroke-width="2" filter="url(#glow)" class="scanner" />
+  </g>
+
+  <!-- Center Content: Title, Badges & Subtitle -->
+  <g transform="translate(600, 140)" text-anchor="middle">
+    <g transform="translate(0, -35)">
+      <rect x="-210" y="-18" width="420" height="28" rx="14" fill="#0f2b46" stroke="#00f2fe" stroke-width="1" opacity="0.9" />
+      <text x="0" y="2" text-anchor="middle" fill="#00f2fe" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" letter-spacing="3">LABORATORY SPECIMEN TRACKING &amp; LIMS</text>
+    </g>
+
+    <text x="0" y="38" font-family="'Segoe UI', 'Montserrat', -apple-system, sans-serif" font-size="42" font-weight="900" letter-spacing="1" fill="url(#primaryGrad)" filter="url(#softGlow)">
+      Awesome-Sample-Tracking-Platform
+    </text>
+
+    <text x="0" y="80" font-family="'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="400" fill="#a0b8d0" letter-spacing="0.5">
+      The Curated Ecosystem for Biospecimen Tracking, Freezers, Lineage, LIMS &amp; ELN
+    </text>
+
+    <g transform="translate(0, 118)">
+      <g transform="translate(-240, 0)">
+        <rect x="-70" y="-13" width="140" height="26" rx="6" fill="#132b45" stroke="#4facfe" stroke-width="1" />
+        <circle cx="-50" cy="0" r="4" fill="#00f2fe" class="node-pulse" />
+        <text x="6" y="5" text-anchor="middle" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600">SaaS Platforms</text>
+      </g>
+
+      <g transform="translate(-75, 0)">
+        <rect x="-80" y="-13" width="160" height="26" rx="6" fill="#132b45" stroke="#00f5d4" stroke-width="1" />
+        <circle cx="-62" cy="0" r="4" fill="#00f5d4" class="node-pulse" />
+        <text x="6" y="5" text-anchor="middle" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600">Open-Source Biobanks</text>
+      </g>
+
+      <g transform="translate(90, 0)">
+        <rect x="-70" y="-13" width="140" height="26" rx="6" fill="#132b45" stroke="#f72585" stroke-width="1" />
+        <circle cx="-50" cy="0" r="4" fill="#f72585" class="node-pulse" />
+        <text x="6" y="5" text-anchor="middle" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600">LIMS &amp; ELN Core</text>
+      </g>
+
+      <g transform="translate(245, 0)">
+        <rect x="-75" y="-13" width="150" height="26" rx="6" fill="#132b45" stroke="#7209b7" stroke-width="1" />
+        <circle cx="-55" cy="0" r="4" fill="#7209b7" class="node-pulse" />
+        <text x="6" y="5" text-anchor="middle" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600">Barcodes &amp; Automation</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right Side: Sample Lineage Tree & 2D DataMatrix Icon -->
+  <g transform="translate(970, 95)">
+    <rect x="15" y="5" width="140" height="140" rx="12" fill="#0a192c" stroke="#00f2fe" stroke-width="2" opacity="0.85" filter="url(#softGlow)" />
+    <rect x="30" y="20" width="15" height="15" fill="#00f2fe" />
+    <rect x="50" y="20" width="15" height="15" fill="#4facfe" />
+    <rect x="85" y="20" width="15" height="15" fill="#00f2fe" />
+    <rect x="105" y="20" width="15" height="15" fill="#00f2fe" />
+    <rect x="30" y="40" width="15" height="15" fill="#00f2fe" />
+    <rect x="68" y="40" width="15" height="15" fill="#f72585" />
+    <rect x="105" y="40" width="15" height="15" fill="#00f2fe" />
+    <rect x="30" y="60" width="15" height="15" fill="#4facfe" />
+    <rect x="50" y="60" width="15" height="15" fill="#00f2fe" />
+    <rect x="85" y="60" width="15" height="15" fill="#4facfe" />
+    <rect x="30" y="80" width="15" height="15" fill="#00f2fe" />
+    <rect x="68" y="80" width="15" height="15" fill="#00f2fe" />
+    <rect x="105" y="80" width="15" height="15" fill="#f72585" />
+    <rect x="30" y="100" width="15" height="15" fill="#00f2fe" />
+    <rect x="50" y="100" width="15" height="15" fill="#00f2fe" />
+    <rect x="70" y="100" width="15" height="15" fill="#4facfe" />
+    <rect x="90" y="100" width="15" height="15" fill="#00f2fe" />
+    <rect x="110" y="100" width="15" height="15" fill="#00f2fe" />
+    <text x="85" y="172" text-anchor="middle" fill="#00f2fe" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="600" letter-spacing="1.5">2D DATAMATRIX</text>
+  </g>
+
+  <!-- Bottom Technical Status Bar -->
+  <g transform="translate(0, 370)">
+    <rect width="1200" height="30" fill="#060c14" opacity="0.95" />
+    <line x1="0" y1="0" x2="1200" y2="0" stroke="#00f2fe" stroke-width="1" opacity="0.3" />
+    <circle cx="35" cy="15" r="4" fill="#00f5d4" class="node-pulse" />
+    <text x="50" y="19" fill="#88a0b9" font-family="'Courier New', monospace" font-size="11">SYSTEM STATUS: SAMPLE TRACKING PLATFORM ONLINE</text>
+    <text x="600" y="19" text-anchor="middle" fill="#88a0b9" font-family="'Courier New', monospace" font-size="11">LINEAGE: REGISTRATION → CRYO → ALIQUOT → LIMS → DISTRIBUTION</text>
+    <text x="1165" y="19" text-anchor="end" fill="#00f2fe" font-family="'Courier New', monospace" font-size="11">v2026.09</text>
+  </g>
+</svg>

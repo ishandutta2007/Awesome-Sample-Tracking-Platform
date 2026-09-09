@@ -1,193 +1,125 @@
-# Awesome-Sample-Tracking-Platform
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Sample-Tracking-Platform">
+    <img src="assets/banner.svg" alt="Awesome Sample Tracking Platform Banner" width="100%" />
+  </a>
+</p>
 
-## Top Sample Tracking Platforms
+# 🧪 Awesome Sample Tracking Platform 🧬
 
+### *Curated Directory of SaaS & Open-Source Software for Laboratory Sample Tracking, Biospecimens, Cryo-Freezer Management, LIMS, ELN & Automation*
 
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Sample-Tracking-Platform/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Sample-Tracking-Platform?style=social&color=white" alt="GitHub_Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Sample-Tracking-Platform/forks"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Sample-Tracking-Platform?style=social&color=white" alt="GitHub Forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Sample-Tracking-Platform/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-CC0_1.0-blue.svg" alt="License: CC0-1.0" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+## 🌐 Overview & Domain Scope
 
 A curated **GitHub-style reference list of laboratory Sample Tracking, LIMS, Biobanking and Laboratory Inventory platforms**, covering commercial SaaS/hosted products and open-source/self-hosted alternatives.
 
-
-
-The primary emphasis is on **open-source software that can be self-hosted**, while keeping commercial SaaS/hosted platforms in a separate section.
-
-
+The primary emphasis is on **open-source software that can be self-hosted**, while keeping commercial SaaS/hosted platforms in a dedicated section.
 
 Modern sample-tracking platforms typically cover:
 
-
-
-* Sample accessioning
-
-* Specimen registration
-
-* Barcode / QR-code identification
-
-* Parent-child sample lineage
-
-* Aliquot management
-
-* Sample splitting and derivation
-
-* Freezer / refrigerator / cryostorage tracking
-
-* Rack / box / position management
-
-* Sample movement history
-
-* Chain of custody
-
-* Sample status and lifecycle
-
-* Storage-location hierarchy
-
-* Study / project association
-
-* Test / assay tracking
-
-* Results management
-
-* Instrument integration
-
-* Electronic laboratory notebooks
-
-* Inventory management
-
-* Reagent / consumable tracking
-
-* Quality control
-
-* Audit trails
-
-* User / role management
-
-* API access
-
-* Import / export
-
-* Reporting
-
-* Workflow automation
-
-* LIMS / ELN integration
-
-* Biobank management
-
-* Research-data management
-
-
+* 🏷️ Sample accessioning & specimen registration
+* 🔲 Barcode / 2D DataMatrix / QR-code identification
+* 🌳 Parent-child sample lineage & aliquot management
+* 🧪 Sample splitting, derivation & freeze-thaw counters
+* ❄️ Freezer / refrigerator / liquid nitrogen cryostorage tracking
+* 📦 Rack / box / position grid coordinates
+* 🔄 Sample movement history & tamper-evident chain of custody
+* 🚦 Sample lifecycle status & protocol disposition
+* 🏢 Storage-location hierarchy (Room → Freezer → Rack → Box → Well)
+* 📋 Study / project / patient association
+* 🔬 Test / assay tracking & results management
+* 🤖 Liquid handler & instrument integration
+* 📓 Electronic laboratory notebook (ELN) integration
+* 📦 Reagent, consumable & chemical inventory management
+* 🛡️ Quality control, validation & audit trails (21 CFR Part 11, GxP, ISO 17025)
+* 👥 Role-based user permissions & Single Sign-On (SSO)
+* 🔌 REST APIs, webhooks & bulk CSV/JSON import/export
+* 📊 Turnaround time analytics & dashboard reporting
 
 > **Important:** "Sample Tracking" is broader than simply maintaining a spreadsheet of specimens. Enterprise systems combine physical sample identity, storage location, lineage, workflows, results, audit history and often instrument or inventory integration. Open-source systems vary considerably in their coverage of these areas.
 
-
-
 ---
 
+## 📑 Table of Contents
 
-
-## Table of Contents
-
-
-
-* [SaaS/Hosted Platforms](#saashosted-platforms)
-
-* [Open-Source](#open-source)
-
-
-
+* [☁️ SaaS/Hosted Platforms](#-saashosted-platforms)
+  * [📊 Market Size & Sector Structure](#-market-size--sector-structure)
+* [💻 Open-Source Repositories Master Ranking](#-open-source-repositories-master-ranking)
+* [🏆 Open-Source Platforms](#-open-source)
   * [Full LIMS / Sample Tracking Platforms](#full-lims--sample-tracking-platforms)
-
   * [Biobank / Specimen Management](#biobank--specimen-management)
-
   * [Laboratory Inventory & Research Management](#laboratory-inventory--research-management)
-
   * [Electronic Lab Notebook + Sample Tracking](#electronic-lab-notebook--sample-tracking)
-
   * [Laboratory Workflow / LIMS Building Blocks](#laboratory-workflow--lims-building-blocks)
-
   * [Barcode / QR / Identification](#barcode--qr--identification)
-
   * [Storage & Database Infrastructure](#storage--database-infrastructure)
-
   * [Identity & Access Management](#identity--access-management)
-
   * [Analytics & Reporting](#analytics--reporting)
-
-* [Commercial → Open-Source Mapping](#commercial--open-source-mapping)
-
-* [Reference Architecture](#reference-architecture)
-
-* [Sample Accessioning Workflow](#sample-accessioning-workflow)
-
-* [Sample Lineage Workflow](#sample-lineage-workflow)
-
-* [Freezer / Cryostorage Workflow](#freezer--cryostorage-workflow)
-
-* [Biobank Workflow](#biobank-workflow)
-
-* [Capability Matrix](#capability-matrix)
-
-* [Recommended Open-Source Stacks](#recommended-open-source-stacks)
-
-* [Best Open-Source Choices by Requirement](#best-open-source-choices-by-requirement)
-
-* [What Open Source Can and Cannot Replace](#what-open-source-can-and-cannot-replace)
-
-* [Why Open Source Is Attractive](#why-open-source-is-attractive)
-
-* [Sample Data Model](#sample-data-model)
-
-* [Security & Compliance Considerations](#security--compliance-considerations)
-
-* [Important Licensing Considerations](#important-licensing-considerations)
-
-* [Conclusion](#conclusion)
-
-* [Contributing](#contributing)
-
-* [Disclaimer](#disclaimer)
-
-
+* [🔄 Commercial → Open-Source Mapping](#commercial--open-source-mapping)
+* [🏗️ Reference Architecture](#reference-architecture)
+* [📥 Sample Accessioning Workflow](#sample-accessioning-workflow)
+* [🧬 Sample Lineage Workflow](#sample-lineage-workflow)
+* [❄️ Freezer / Cryostorage Workflow](#freezer--cryostorage-workflow)
+* [🧪 Biobank Workflow](#biobank-workflow)
+* [📊 Capability Matrix](#capability-matrix)
+* [🚀 Recommended Open-Source Stacks](#recommended-open-source-stacks)
+* [🎯 Best Open-Source Choices by Requirement](#best-open-source-choices-by-requirement)
+* [⚖️ What Open Source Can and Cannot Replace](#what-open-source-can-and-cannot-replace)
+* [💡 Why Open Source Is Attractive](#why-open-source-is-attractive)
+* [🗃️ Sample Data Model](#sample-data-model)
+* [🛡️ Security & Compliance Considerations](#security--compliance-considerations)
+* [📜 Important Licensing Considerations](#important-licensing-considerations)
+* [📈 Star History](#-star-history)
+* [🏁 Conclusion](#conclusion)
+* [🤝 Contributing](#contributing)
+* [⚠️ Disclaimer](#disclaimer)
 
 ---
 
 
 
-# SaaS/Hosted Platforms
-
-
+# ☁️ SaaS/Hosted Platforms
 
 These are **commercial platforms** and are deliberately kept separate from the open-source ecosystem.
 
+### 📊 Market Size & Sector Structure
+> 📈 **Estimated Market Size & Industry Concentration:** The global **Laboratory Sample Tracking, LIMS, and Biobanking Management** market is valued at approximately **$2.8 Billion to $3.3 Billion (2024–2026)**, and is projected to surpass **$6.5 Billion by 2032** at a Compound Annual Growth Rate (CAGR) of **~11.5% to 12.3%**.
+> 
+> The sector is **moderately fragmented** rather than concentrated or winner-take-all. Highly regulated enterprise environments (such as pharmaceutical QA/QC, clinical diagnostics, and GxP manufacturing) are dominated by established conglomerates like Thermo Fisher Scientific, LabWare, and Clinisys. Concurrently, modern life-science research institutes, biotech startups, and academic core facilities leverage agile cloud platforms (Benchling, Scispot, Quartzy) or specialized biobank/freezer trackers (FreezerPro, OpenSpecimen). Stringent regulatory standards (FDA 21 CFR Part 11, ISO 17025, CAP/CLIA, HIPAA) and deeply divergent vertical workflows preserve strong multi-vendor competition across the ecosystem.
 
+The table below catalogs leading commercial SaaS and hosted platforms, sorted by **Company Size (Revenue / Valuation / Market Cap)** in descending order:
 
-| Platform | Primary Focus | Starting Price (Specific Tier) | Free Tier & Free Trial Limits (Specific Scope) | Typical Strengths |
+| Platform / Solution | Company Size (Valuation / Revenue) | Starting Price (Specific Tier) | Free Tier & Free Trial Limits (Specific Scope) | Primary Focus & Domain Capabilities |
 | :--- | :--- | :--- | :--- | :--- |
-| [Benchling](https://www.benchling.com/) | R&D platform / ELN / sample management | **$1,200 / user / year** (~$100/user/month for commercial entry tier; entry team packages from $10,000/year) | **Free forever Academic Plan** (unlimited notebook entries, core molecular biology design tools, 10 GB storage/user); commercial has **14-day interactive trial** | Research workflows, molecular biology, inventory, samples, data and collaboration |
-| [Labguru](https://www.labguru.com/) | Research management / LIMS | **$1,000 / user / year** (~$83.33/user/month for commercial labs; academic lab discounts starting ~$45/user/month) | **14-day free trial** (full access to ELN, inventory, specimen lineage, and protocol execution following sales onboarding; no free forever tier) | Samples, inventory, ELN, protocols, freezer management, research workflows |
-| [FreezerPro](https://www.ruro.com/freezerpro/) | Sample / freezer management | **$79 / user / month** (billed annually at $948/user/year for Cloud Basic; concurrent seats from $149/user/month) | **14-day full-featured cloud trial** (complete freezer location mapping, aliquot lineage, 2D barcode generation, and sample check-in/out; no free forever tier) | Cryostorage, sample inventory, barcodes, locations and tracking |
-| [OpenSpecimen](https://www.openspecimen.org/) | Biobank / specimen management | **$75,000 one-time** + $35,000/year annual support & hosting (Starter Biobank tier; hosted packages from ~$1,500/month) | **Community Edition is 100% free and open source forever** (self-hosted, unlimited samples/users, BSD-3-Clause license); plus **30-day hosted demo trial** | Biospecimens, collections, consent, storage, distribution and APIs |
-| [LabCollector](https://www.labcollector.com/) | LIMS / lab inventory | **$550 / user / year** (~$45.83/user/month for Inventory Pack; LIMS Pack starts at $1,300/user/year; perpetual licenses from $1,800) | **Free forever "Startup Pack"** (self-hosted, capped at 3 users and 1,000 records across modules); plus **30-day full cloud trial** (all modules unlocked) | Sample tracking, inventory, freezer management, equipment and workflows |
-| [eLabNext](https://www.elabnext.com/) | ELN / LIMS | **€14.50 / user / month** (~$16/user/month for eLabInventory; eLabJournal + eLabInventory bundle from €34.95/user/month billed annually) | **30-day full-featured free trial** (unlimited sample items, complete freezer hierarchy, 2D barcode generation, and mobile barcode scanning; no free forever tier) | Sample management, inventory, workflows, ELN and integrations |
-| [CloudLIMS](https://cloudlims.com/) | Cloud LIMS | **$40 / user / month** (Standard package; Lite package from $66–$100/user/month billed annually) | **30-day full-featured free trial** (unrestricted access to sample accessioning, storage visualization, and workflow configuration wizard; no free forever tier) | Sample lifecycle, tests, workflows, inventory, reporting and compliance |
-| [Quartzy](https://www.quartzy.com/) | Lab management | **$50 / month** (Academic tier billed annually at $599/year, or ~$12.41/user/month; Standard Industry starts at $250/month for 5 users) | **14-day free trial** (unrestricted access to lab inventory, order requests, barcode generation, and Quartzy Shop; transitions to read-only post-trial; no free forever tier) | Inventory, purchasing, supplies, sample/research operations |
-| [QBench](https://qbench.com/) | LIMS | **$600 / month** (billed annually at $7,200/year, includes core LIMS and 5 users; additional users ~$100/user/month) | **14-day interactive guided trial** (access to sample accessioning, batch testing workflows, and client reporting portal upon demo; no free forever tier) | Sample management, workflows, results, reporting and lab operations |
-| [LabVantage](https://www.labvantage.com/) | Enterprise LIMS | **~$18,000 / year** (approx. $175/user/month for SaaS entry licenses, typically minimum 5–10 users) | **30-day test-drive pilot environment** (pre-populated with sample datasets, biobanking modules, and analytical test workflows upon consultation; no free forever tier) | Sample management, workflows, instruments, quality and analytics |
-| [STARLIMS](https://www.starlims.com/) | Enterprise LIMS | **~$15,000 / year** (or approx. $150/user/month for mid-market cloud packages) | **30-day evaluation sandbox** (access to preconfigured clinical/biobanking workflows and compliance reporting modules upon demo qualification; no free forever tier) | Laboratory workflows, sample management, instruments, quality |
-| [LabWare LIMS](https://www.labware.com/) | Enterprise LIMS | **$400 / user / month** ($4,800/user/year for LabWare GROW cloud SaaS tier; on-premise base systems from ~$25,000/year) | **30-day cloud pilot sandbox** (guided configuration for standard testing workflows, sample accessioning, and instrument templates; no free forever tier) | Sample lifecycle, laboratory workflows, instruments and compliance |
-| [Scispot](https://www.scispot.com/) | Life-science data platform | **$9,000 / year** ($750/month for Essential tier, includes up to 10 user seats) | **Free forever "Pico" Plan** (for pre-seed biotech startups; basic ELN/LIMS templates, core sample registration, 1 workspace); **14-day free trial** of Essential tier | Samples, inventory, workflows, integrations and research data |
-| [Labii](https://www.labii.com/) | LIMS / ELN | **$49 / user / month** ($479/user/year; academic 50% discount at ~$24.50/user/month; or $0.10/record pay-per-use) | **Free forever plan** (1 user, full table configuration, restricted to 100 records/month); plus **14-day full-feature trial** (renewable annually) | Sample management, inventory, ELN and workflow automation |
-| [eLabFTW Cloud](https://www.elabftw.net/) | ELN / lab management | **€4,985 / year** (~$5,400/year for Deltablot managed instance with up to 128 active users and 500 GB storage) | **Community Edition is 100% free forever** (self-hosted under AGPLv3, unlimited users and storage); plus **30-day hosted evaluation trial** from Deltablot | Experiments, resources, database records and collaboration |
-| [SciNote](https://www.scinote.net/) | ELN / LIMS | **~$3,000 / year** (approx. $25–$39/user/month for Team/Academic plans; GxP/regulated tiers from $5,000+/year) | **Free forever plan for individuals** (1 user, unlimited experiments, 1 GB storage, 50 MB max file upload size); plus **14-day free trial** of Team features | Experiments, samples, protocols, inventory and collaboration |
-| [LabKey](https://www.labkey.com/) | Research data / LIMS | **$6,540 / year** (approx. $545/month for Starter plan, includes 5 users) | **LabKey Community Edition is 100% free forever** (self-hosted, Apache 2.0); Cloud Sample Manager offers a **30-day hosted evaluation trial** | Biospecimens, laboratory data, studies and data integration |
-| [Sapio Sciences](https://www.sapiosciences.com/) | LIMS / ELN | **$350 / user / month** ($4,200/user/year for unified research lab tier) | **14-day to 30-day cloud test sandbox** (includes access to sample tracking, visual freezer designer, and no-code workflow designer upon request; no free forever tier) | Sample management, lab workflows, instruments and research |
-| [Clinisys](https://www.clinisys.com/) | Laboratory informatics | **~$20,000 / year** (approx. $1,500–$2,000/user/year base deployment; annual maintenance contracts starting at ~$16,000/year) | **30-day guided evaluation sandbox** (preconfigured clinical diagnostics, toxicology, and environmental lab workflows upon enterprise qualification; no free forever tier) | Clinical and scientific laboratory workflows, multi-site diagnostics, public health tracking |
-| [Thermo Fisher SampleManager](https://www.thermofisher.com/) | Enterprise LIMS | **~$25,000 / year** (or ~$2,000–$2,500/seat/year entry base license; enterprise deployment packages from $50,000+) | **30-day proof-of-concept trial** (guided sandbox instance with preloaded sample datasets and workflow templates for qualified enterprise teams; no free forever tier) | Sample lifecycle, laboratory operations and enterprise integration |
-
-
+| **[Thermo Fisher SampleManager](https://www.thermofisher.com/)** | **~$210B Market Cap** / ~$43B Annual Revenue *(NYSE: TMO)* | **~$25,000 / year** *(or ~$2,000–$2,500/seat/year entry base license; enterprise deployment packages from $50,000+)* | **30-day proof-of-concept trial** *(guided sandbox instance with preloaded sample datasets and workflow templates for qualified enterprise teams; no free forever tier)* | Enterprise LIMS, LES, and SDMS for regulated pharma, QA/QC, biobanking, and high-throughput analytical testing. |
+| **[Clinisys](https://www.clinisys.com/)** | **~$15B Enterprise Value** *(Roper Technologies)* / ~$300M+ Revenue | **~$20,000 / year** *(approx. $1,500–$2,000/user/year base deployment; annual maintenance contracts starting at ~$16,000/year)* | **30-day guided evaluation sandbox** *(preconfigured clinical diagnostics, toxicology, and environmental lab workflows upon enterprise qualification; no free forever tier)* | Enterprise clinical, diagnostic, toxicology, and public health laboratory information systems across multi-site networks. |
+| **[Benchling](https://www.benchling.com/)** | **$6.1B Valuation** *(Series F)* / ~$200M+ ARR | **$1,200 / user / year** *(~$100/user/month for commercial entry tier; entry team packages from $10,000/year)* | **Free forever Academic Plan** *(unlimited notebook entries, core molecular biology design tools, 10 GB storage/user)*; commercial has **14-day interactive trial** | Cloud-native R&D platform unifying sample registration, molecular biology workflows, freezer inventory, experiment notes, and bioprocess data. |
+| **[FreezerPro](https://www.ruro.com/freezerpro/)** *(Azenta)* | **~$1.8B Market Cap** / ~$650M Annual Revenue *(NASDAQ: AZTA)* | **$79 / user / month** *(billed annually at $948/user/year for Cloud Basic; concurrent seats from $149/user/month)* | **14-day full-featured cloud trial** *(complete freezer location mapping, aliquot lineage, 2D barcode generation, and sample check-in/out; no free forever tier)* | Web-based sample inventory platform focused specifically on cryogenic freezer maps, specimen tracking, 2D barcoding, and biobank storage. |
+| **[STARLIMS](https://www.starlims.com/)** | **~$500M Valuation** *(Francisco Partners)* / ~$100M+ Revenue | **~$15,000 / year** *(or approx. $150/user/month for mid-market cloud packages)* | **30-day evaluation sandbox** *(access to preconfigured clinical/biobanking workflows and compliance reporting modules upon demo qualification; no free forever tier)* | Enterprise laboratory informatics covering sample accessioning, batch testing, quality management, instrument interfaces, and regulatory compliance. |
+| **[LabWare LIMS](https://www.labware.com/)** | **~$250M+ Annual Revenue** *(Privately held global LIMS leader)* | **$400 / user / month** *($4,800/user/year for LabWare GROW cloud SaaS tier; on-premise base systems from ~$25,000/year)* | **30-day cloud pilot sandbox** *(guided configuration for standard testing workflows, sample accessioning, and instrument templates; no free forever tier)* | Robust enterprise LIMS and ELN platform widely used in regulated pharmaceutical manufacturing, biobanking, clinical trials, and environmental labs. |
+| **[Sapio Sciences](https://www.sapiosciences.com/)** | **~$150M Valuation** *(Primus Capital)* / ~$25M+ Revenue | **$350 / user / month** *($4,200/user/year for unified research lab tier)* | **14-day to 30-day cloud test sandbox** *(includes access to sample tracking, visual freezer designer, and no-code workflow designer upon request; no free forever tier)* | Unified no-code/low-code informatics platform combining LIMS, ELN, and scientific data management for molecular biology and biobanks. |
+| **[Quartzy](https://www.quartzy.com/)** | **~$150M Valuation** / ~$25M Annual Revenue | **$50 / month** *(Academic tier billed annually at $599/year, or ~$12.41/user/month; Standard Industry starts at $250/month for 5 users)* | **14-day free trial** *(unrestricted access to lab inventory, order requests, barcode generation, and Quartzy Shop; transitions to read-only post-trial; no free forever tier)* | Centralized lab supply management, reagent inventory, punchout procurement, equipment scheduling, and chemical tracking. |
+| **[LabVantage](https://www.labvantage.com/)** | **~$120M+ Annual Revenue** *(TCG)* | **~$18,000 / year** *(approx. $175/user/month for SaaS entry licenses, typically minimum 5–10 users)* | **30-day test-drive pilot environment** *(pre-populated with sample datasets, biobanking modules, and analytical test workflows upon consultation; no free forever tier)* | 100% browser-native enterprise LIMS, ELN, and biobanking system for bio-specimen tracking, molecular pathology, and multi-site lab operations. |
+| **[Scispot](https://www.scispot.com/)** | **~$25M Valuation** *(YC W21)* / ~$5M ARR | **$9,000 / year** *($750/month for Essential tier, includes up to 10 user seats)* | **Free forever "Pico" Plan** *(for pre-seed biotech startups; basic ELN/LIMS templates, core sample registration, 1 workspace)*; **14-day free trial** of Essential tier | Life-sciences operating platform with programmable sample registries, graphical plate mappers, workflow automation, and computational toolkits. |
+| **[eLabNext](https://www.elabnext.com/)** *(Eppendorf)* | **Division of Eppendorf SE** *(€1.1B rev)* / ~$20M+ division ARR | **€14.50 / user / month** *(~$16/user/month for eLabInventory; eLabJournal + eLabInventory bundle from €34.95/user/month billed annually)* | **30-day full-featured free trial** *(unlimited sample items, complete freezer hierarchy, 2D barcode generation, and mobile barcode scanning; no free forever tier)* | Digital laboratory platform integrating sample tracking (eLabInventory), experiment notes (eLabJournal), protocols, and equipment bookings. |
+| **[Labguru](https://www.labguru.com/)** | **Subsidiary of Holtzbrinck** / ~$20M+ ARR | **$1,000 / user / year** *(~$83.33/user/month for commercial labs; academic discounts starting ~$45/user/month)* | **14-day free trial** *(full access to ELN, inventory, specimen lineage, and protocol execution following sales onboarding; no free forever tier)* | All-in-one web-based laboratory platform integrating ELN, LIMS, sample inventory, freezer box locations, and automated workflow pipelines. |
+| **[LabKey](https://www.labkey.com/)** | **~$15M–$20M Annual Revenue** | **$6,540 / year** *(approx. $545/month for Starter plan, includes 5 users)* | **LabKey Community Edition is 100% free forever** *(self-hosted, Apache 2.0)*; Cloud Sample Manager offers a **30-day hosted evaluation trial** | Specimen parentage/lineage, freezer grid storage, barcode tracking, assay data integration, and study participant metadata management. |
+| **[LabCollector](https://www.labcollector.com/)** | **~$10M–$15M Annual Revenue** *(AgileBio)* | **$550 / user / year** *(approx. $45.83/user/month for Inventory Pack; LIMS Pack starts at $1,300/user/year; perpetual licenses from $1,800)* | **Free forever "Startup Pack"** *(self-hosted, capped at 3 users and 1,000 records across modules); plus **30-day full cloud trial** *(all modules unlocked)* | Modular intranet and cloud laboratory platform with sample tracking, 2D rack scanning, electronic lab notebook, and biobanking plugins. |
+| **[QBench](https://qbench.com/)** | **~$10M Annual Revenue** | **$600 / month** *(billed annually at $7,200/year, includes core LIMS and 5 users; additional users ~$100/user/month)* | **14-day interactive guided trial** *(access to sample accessioning, batch testing workflows, and client reporting portal upon demo; no free forever tier)* | Cloud LIMS optimized for analytical testing laboratories, sample accessioning, batch management, results validation, and customer portals. |
+| **[SciNote](https://www.scinote.net/)** | **~$10M Valuation** / ~$3M–$5M ARR | **~$3,000 / year** *(approx. $25–$39/user/month for Team/Academic plans; GxP/regulated tiers from $5,000+/year)* | **Free forever plan for individuals** *(1 user, unlimited experiments, 1 GB storage, 50 MB max file upload size)*; plus **14-day free trial** of Team features | Top-tier ELN and sample inventory platform with 21 CFR Part 11 e-signatures, protocol execution, and academic collaboration. |
+| **[Labii](https://www.labii.com/)** | **~$8M–$10M Valuation** / ~$2M ARR | **$49 / user / month** *($479/user/year; academic 50% discount at ~$24.50/user/month; or $0.10/record pay-per-use)* | **Free forever plan** *(1 user, full table configuration, restricted to 100 records/month)*; plus **14-day full-feature trial** *(renewable annually)* | Highly extensible ELN and LIMS platform featuring customizable tables, sample registration, freezer coordinates, and pay-per-use records. |
+| **[CloudLIMS](https://cloudlims.com/)** | **~$5M–$10M Annual Revenue** | **$40 / user / month** *(Standard package; Lite package from $66–$100/user/month billed annually)* | **30-day full-featured free trial** *(unrestricted access to sample accessioning, storage visualization, and workflow configuration wizard; no free forever tier)* | Pure SaaS in-the-cloud LIMS supporting biospecimen management, biorepository freezers, clinical testing, and regulatory compliance. |
+| **[OpenSpecimen (Hosted)](https://www.openspecimen.org/)** | **~$5M–$8M Annual Revenue** *(Krishagni)* | **$75,000 one-time** *+ $35,000/year annual support & hosting (Starter Biobank tier; hosted packages from ~$1,500/month)* | **Community Edition is 100% free and open source forever** *(self-hosted, unlimited samples/users, BSD-3-Clause license)*; plus **30-day hosted demo trial** | Globally recognized biospecimen management system for biobanks, clinical research studies, cancer centers, and biorepository networks. |
+| **[eLabFTW Cloud](https://www.elabftw.net/)** | **~$1M–$3M Annual Revenue** *(Deltablot)* | **€4,985 / year** *(~$5,400/year for Deltablot managed instance with up to 128 active users and 500 GB storage)* | **Community Edition is 100% free forever** *(self-hosted under AGPLv3, unlimited users and storage)*; plus **30-day hosted evaluation trial** from Deltablot | Secure managed hosting and professional enterprise support for eLabFTW with automated backups, eIDAS timestamps, and HIPAA compliance. |
 
 ---
-
-
 
 # Commercial Platform Categories
 
@@ -255,71 +187,69 @@ Laboratory Inventory
 
 
 
-# Open-Source
+# 🏆 Open-Source
 
+## 💻 Open-Source Repositories Master Ranking
 
+The table below compiles key open-source repositories directly relevant to sample tracking, biobanking, LIMS, ELN, laboratory automation, and laboratory infrastructure, **sorted by GitHub star count in descending order**:
 
-The open-source ecosystem is considerably more fragmented than the commercial LIMS market.
-
-
-
-A complete sample-tracking platform can often be assembled from:
-
-
-
-```text
-
-Full LIMS
-
-    +
-
-Biobank / Specimen Management
-
-    +
-
-ELN
-
-    +
-
-Inventory
-
-    +
-
-Barcode
-
-    +
-
-Database
-
-    +
-
-Object Storage
-
-    +
-
-Identity
-
-    +
-
-Analytics
-
-```
-
-
-
-Several open-source LIMS platforms provide genuine sample tracking, while others are better understood as **research-data, ELN, biobank or laboratory-infrastructure building blocks**.
-
-
+| Repository | GitHub_Stars | Primary Role & Ecosystem Focus | License |
+| :--- | :---: | :--- | :---: |
+| **[opencv](https://github.com/opencv/opencv)** | [![GitHub_Stars](https://img.shields.io/github/stars/opencv/opencv?style=social&color=white)](https://github.com/opencv/opencv/stargazers) | Open-source computer vision library used in high-throughput 2D DataMatrix vial rack readers | `Apache-2.0` |
+| **[grafana](https://github.com/grafana/grafana)** | [![GitHub_Stars](https://img.shields.io/github/stars/grafana/grafana?style=social&color=white)](https://github.com/grafana/grafana/stargazers) | Operational visualization platform for real-time freezer temperature telemetry and LIMS health | `AGPL-3.0` |
+| **[tesseract](https://github.com/tesseract-ocr/tesseract)** | [![GitHub_Stars](https://img.shields.io/github/stars/tesseract-ocr/tesseract?style=social&color=white)](https://github.com/tesseract-ocr/tesseract/stargazers) | Optical character recognition (OCR) engine for digitizing printed tube labels and sample sheets | `Apache-2.0` |
+| **[superset](https://github.com/apache/superset)** | [![GitHub_Stars](https://img.shields.io/github/stars/apache/superset?style=social&color=white)](https://github.com/apache/superset/stargazers) | Modern enterprise business intelligence and visualization dashboard for laboratory sample metrics | `Apache-2.0` |
+| **[prometheus](https://github.com/prometheus/prometheus)** | [![GitHub_Stars](https://img.shields.io/github/stars/prometheus/prometheus?style=social&color=white)](https://github.com/prometheus/prometheus/stargazers) | Monitoring system and time-series database for ultra-low temperature freezers and server telemetry | `Apache-2.0` |
+| **[minio](https://github.com/minio/minio)** | [![GitHub_Stars](https://img.shields.io/github/stars/minio/minio?style=social&color=white)](https://github.com/minio/minio/stargazers) | High-performance S3-compatible object storage for bio-imaging and instrument raw run files | `AGPL-3.0` |
+| **[metabase](https://github.com/metabase/metabase)** | [![GitHub_Stars](https://img.shields.io/github/stars/metabase/metabase?style=social&color=white)](https://github.com/metabase/metabase/stargazers) | Intuitive BI and analytics platform for querying sample turnaround times, test queues and KPIs | `NOASSERTION` |
+| **[airflow](https://github.com/apache/airflow)** | [![GitHub_Stars](https://img.shields.io/github/stars/apache/airflow?style=social&color=white)](https://github.com/apache/airflow/stargazers) | Programmatic workflow orchestration platform for scheduling and monitoring sample data pipelines | `Apache-2.0` |
+| **[duckdb](https://github.com/duckdb/duckdb)** | [![GitHub_Stars](https://img.shields.io/github/stars/duckdb/duckdb?style=social&color=white)](https://github.com/duckdb/duckdb/stargazers) | In-process analytical SQL database optimized for high-performance laboratory assay analytics | `MIT` |
+| **[erpnext](https://github.com/frappe/erpnext)** | [![GitHub_Stars](https://img.shields.io/github/stars/frappe/erpnext?style=social&color=white)](https://github.com/frappe/erpnext/stargazers) | Enterprise ERP with comprehensive inventory, serial/batch tracking & multi-location warehouse management | `GPL-3.0` |
+| **[keycloak](https://github.com/keycloak/keycloak)** | [![GitHub_Stars](https://img.shields.io/github/stars/keycloak/keycloak?style=social&color=white)](https://github.com/keycloak/keycloak/stargazers) | Open-source identity and access management (IAM) providing Single Sign-On (SSO) for LIMS/ELN | `Apache-2.0` |
+| **[zxing](https://github.com/zxing/zxing)** | [![GitHub_Stars](https://img.shields.io/github/stars/zxing/zxing?style=social&color=white)](https://github.com/zxing/zxing/stargazers) | Multi-format 1D/2D barcode image processing library widely deployed in laboratory barcode readers | `Apache-2.0` |
+| **[authentik](https://github.com/goauthentik/authentik)** | [![GitHub_Stars](https://img.shields.io/github/stars/goauthentik/authentik?style=social&color=white)](https://github.com/goauthentik/authentik/stargazers) | Modern open-source identity provider integrating OAuth2/SAML with role-based lab permissions | `NOASSERTION` |
+| **[timescaledb](https://github.com/timescale/timescaledb)** | [![GitHub_Stars](https://img.shields.io/github/stars/timescale/timescaledb?style=social&color=white)](https://github.com/timescale/timescaledb/stargazers) | PostgreSQL time-series engine for cryogenic temperature logs and lab ambient monitoring | `NOASSERTION` |
+| **[temporal](https://github.com/temporalio/temporal)** | [![GitHub_Stars](https://img.shields.io/github/stars/temporalio/temporal?style=social&color=white)](https://github.com/temporalio/temporal/stargazers) | Microservice orchestration platform for executing reliable and resilient laboratory state machines | `MIT` |
+| **[postgres](https://github.com/postgres/postgres)** | [![GitHub_Stars](https://img.shields.io/github/stars/postgres/postgres?style=social&color=white)](https://github.com/postgres/postgres/stargazers) | The premier relational database engine for robust transactional LIMS and sample registries | `NOASSERTION` |
+| **[grocy](https://github.com/grocy/grocy)** | [![GitHub_Stars](https://img.shields.io/github/stars/grocy/grocy?style=social&color=white)](https://github.com/grocy/grocy/stargazers) | Web-based inventory, barcodes and tracking application for equipment, supplies and consumables | `MIT` |
+| **[camel](https://github.com/apache/camel)** | [![GitHub_Stars](https://img.shields.io/github/stars/apache/camel?style=social&color=white)](https://github.com/apache/camel/stargazers) | Versatile enterprise integration pattern framework connecting laboratory instruments to LIMS/HIS | `Apache-2.0` |
+| **[nifi](https://github.com/apache/nifi)** | [![GitHub_Stars](https://img.shields.io/github/stars/apache/nifi?style=social&color=white)](https://github.com/apache/nifi/stargazers) | Robust data ingestion, ETL and event processing engine for lab instruments and sample streaming data | `Apache-2.0` |
+| **[quaggaJS](https://github.com/serratus/quaggaJS)** | [![GitHub_Stars](https://img.shields.io/github/stars/serratus/quaggaJS?style=social&color=white)](https://github.com/serratus/quaggaJS/stargazers) | Advanced HTML5/JavaScript barcode scanner for web-based laboratory sample check-in | `MIT` |
+| **[nextflow](https://github.com/nextflow-io/nextflow)** | [![GitHub_Stars](https://img.shields.io/github/stars/nextflow-io/nextflow?style=social&color=white)](https://github.com/nextflow-io/nextflow/stargazers) | Data-driven computational pipeline and workflow orchestrator widely used in genomics sample pipelines | `Apache-2.0` |
+| **[snakemake](https://github.com/snakemake/snakemake)** | [![GitHub_Stars](https://img.shields.io/github/stars/snakemake/snakemake?style=social&color=white)](https://github.com/snakemake/snakemake/stargazers) | Workflow management system to create reproducible and scalable scientific data analyses for samples | `MIT` |
+| **[zxing-cpp](https://github.com/zxing-cpp/zxing-cpp)** | [![GitHub_Stars](https://img.shields.io/github/stars/zxing-cpp/zxing-cpp?style=social&color=white)](https://github.com/zxing-cpp/zxing-cpp/stargazers) | High-performance C++ port of ZXing for embedded and desktop sample tube rack scanners | `Apache-2.0` |
+| **[PartKeepr](https://github.com/PartKeepr/PartKeepr)** | [![GitHub_Stars](https://img.shields.io/github/stars/PartKeepr/PartKeepr?style=social&color=white)](https://github.com/PartKeepr/PartKeepr/stargazers) | Open-source electronic components and laboratory item/consumable inventory management system | `GPL-3.0` |
+| **[elabftw](https://github.com/elabftw/elabftw)** | [![GitHub_Stars](https://img.shields.io/github/stars/elabftw/elabftw?style=social&color=white)](https://github.com/elabftw/elabftw/stargazers) | Leading open-source Electronic Lab Notebook (ELN) with sample/reagent inventory & database tracking | `AGPL-3.0` |
+| **[zbar](https://github.com/mchehab/zbar)** | [![GitHub_Stars](https://img.shields.io/github/stars/mchehab/zbar?style=social&color=white)](https://github.com/mchehab/zbar/stargazers) | Bar code reader library supporting EAN, Code 128, Code 39, QR Code for specimen labels | `LGPL-2.1` |
+| **[openboxes](https://github.com/openboxes/openboxes)** | [![GitHub_Stars](https://img.shields.io/github/stars/openboxes/openboxes?style=social&color=white)](https://github.com/openboxes/openboxes/stargazers) | Supply chain & inventory management system designed for healthcare, clinics & biospecimen storage | `EPL-1.0` |
+| **[pylabrobot](https://github.com/PyLabRobot/pylabrobot)** | [![GitHub_Stars](https://img.shields.io/github/stars/PyLabRobot/pylabrobot?style=social&color=white)](https://github.com/PyLabRobot/pylabrobot/stargazers) | Universal hardware-agnostic Python library for liquid handling robots & automated sample management | `MIT` |
+| **[senaite.core](https://github.com/senaite/senaite.core)** | [![GitHub_Stars](https://img.shields.io/github/stars/senaite/senaite.core?style=social&color=white)](https://github.com/senaite/senaite.core/stargazers) | Enterprise open-source LIMS core engine for analytical, environmental & clinical sample testing | `GPL-2.0` |
+| **[miso-lims](https://github.com/miso-lims/miso-lims)** | [![GitHub_Stars](https://img.shields.io/github/stars/miso-lims/miso-lims?style=social&color=white)](https://github.com/miso-lims/miso-lims/stargazers) | Open-source LIMS developed for Next-Generation Sequencing (NGS) centers & sample tracking | `GPL-3.0` |
+| **[OpenELIS-Global-2](https://github.com/DIGI-UW/OpenELIS-Global-2)** | [![GitHub_Stars](https://img.shields.io/github/stars/DIGI-UW/OpenELIS-Global-2?style=social&color=white)](https://github.com/DIGI-UW/OpenELIS-Global-2/stargazers) | Clinical & public health laboratory information system deployed across global clinical bio-networks | `MPL-2.0` |
+| **[senaite.lims](https://github.com/senaite/senaite.lims)** | [![GitHub_Stars](https://img.shields.io/github/stars/senaite/senaite.lims?style=social&color=white)](https://github.com/senaite/senaite.lims/stargazers) | Full-featured SENAITE LIMS distribution built on Plone with sample registration & worksheets | `GPL-2.0` |
+| **[chemotion_ELN](https://github.com/ComPlat/chemotion_ELN)** | [![GitHub_Stars](https://img.shields.io/github/stars/ComPlat/chemotion_ELN?style=social&color=white)](https://github.com/ComPlat/chemotion_ELN/stargazers) | Open-source ELN & chemical/biological sample repository with molecular structure support | `AGPL-3.0` |
+| **[autoprotocol-python](https://github.com/autoprotocol/autoprotocol-python)** | [![GitHub_Stars](https://img.shields.io/github/stars/autoprotocol/autoprotocol-python?style=social&color=white)](https://github.com/autoprotocol/autoprotocol-python/stargazers) | Standard Python library for Autoprotocol: formal specification for automated laboratory sample protocols | `BSD-3-Clause` |
+| **[sequencescape](https://github.com/sanger/sequencescape)** | [![GitHub_Stars](https://img.shields.io/github/stars/sanger/sequencescape?style=social&color=white)](https://github.com/sanger/sequencescape/stargazers) | Wellcome Sanger Institute high-throughput sample management & NGS sequencing LIMS platform | `MIT` |
+| **[iskylims](https://github.com/BU-ISCIII/iskylims)** | [![GitHub_Stars](https://img.shields.io/github/stars/BU-ISCIII/iskylims?style=social&color=white)](https://github.com/BU-ISCIII/iskylims/stargazers) | Open-source LIMS for Next-Generation Sequencing (NGS) sample accessioning, runs & bioinformatics | `GPL-3.0` |
+| **[baobab.lims](https://github.com/BaobabLims/baobab.lims)** | [![GitHub_Stars](https://img.shields.io/github/stars/BaobabLims/baobab.lims?style=social&color=white)](https://github.com/BaobabLims/baobab.lims/stargazers) | Open-source LIMS specialized for human biobanks, biospecimen lifecycle & sample metadata | `GPL-3.0` |
+| **[openspecimen](https://github.com/krishagni/openspecimen)** | [![GitHub_Stars](https://img.shields.io/github/stars/krishagni/openspecimen?style=social&color=white)](https://github.com/krishagni/openspecimen/stargazers) | Premier open-source platform for biobanking, biospecimen tracking, participant consent & cryo-storage | `BSD-3-Clause` |
+| **[MetaLIMS](https://github.com/cheinle/MetaLIMS)** | [![GitHub_Stars](https://img.shields.io/github/stars/cheinle/MetaLIMS?style=social&color=white)](https://github.com/cheinle/MetaLIMS/stargazers) | Lightweight web-based LIMS designed for small metagenomic sequencing & biospecimen collection | `GPL-3.0` |
+| **[open-lims](https://github.com/open-lims/open-lims)** | [![GitHub_Stars](https://img.shields.io/github/stars/open-lims/open-lims?style=social&color=white)](https://github.com/open-lims/open-lims/stargazers) | Modular open-source laboratory information management system for sample tracking & lab projects | `GPL-3.0` |
+| **[limbus](https://github.com/AberystwythSystemsBiology/limbus)** | [![GitHub_Stars](https://img.shields.io/github/stars/AberystwythSystemsBiology/limbus?style=social&color=white)](https://github.com/AberystwythSystemsBiology/limbus/stargazers) | Biobank Information Management System (BIMS) for aliquot parentage, freezer batches & barcodes | `GPL-3.0` |
+| **[sampledb](https://github.com/sciapp/sampledb)** | [![GitHub_Stars](https://img.shields.io/github/stars/sciapp/sampledb?style=social&color=white)](https://github.com/sciapp/sampledb/stargazers) | Web-based sample and measurement metadata management system for laboratories & scientific groups | `MIT` |
+| **[opal](https://github.com/obiba/opal)** | [![GitHub_Stars](https://img.shields.io/github/stars/obiba/opal?style=social&color=white)](https://github.com/obiba/opal/stargazers) | Core database application for epidemiological studies, human biobanks & population health repositories | `GPL-3.0` |
+| **[biobank](https://github.com/CBSR-Biobank/biobank)** | [![GitHub_Stars](https://img.shields.io/github/stars/CBSR-Biobank/biobank?style=social&color=white)](https://github.com/CBSR-Biobank/biobank/stargazers) | Biorepository web application for tracking patient specimens, cryo-boxes & study samples | `MIT` |
+| **[bika.lims](https://github.com/bikalims/bika.lims)** | [![GitHub_Stars](https://img.shields.io/github/stars/bikalims/bika.lims?style=social&color=white)](https://github.com/bikalims/bika.lims/stargazers) | Open-source LIMS for analytical, food, and wine testing laboratories with sample chain-of-custody | `GPL-2.0` |
+| **[platform](https://github.com/LabKey/platform)** | [![GitHub_Stars](https://img.shields.io/github/stars/LabKey/platform?style=social&color=white)](https://github.com/LabKey/platform/stargazers) | Extensible open-source platform for biological assays, study data, sample management & freezer tracking | `Apache-2.0` |
+| **[community-openbis](https://github.com/openbis/community-openbis)** | [![GitHub_Stars](https://img.shields.io/github/stars/openbis/community-openbis?style=social&color=white)](https://github.com/openbis/community-openbis/stargazers) | Scientific data management platform & sample registry developed at ETH Zurich | `Apache-2.0` |
 
 ---
 
-
-
-# Full LIMS / Sample Tracking Platforms
+# 🏆 Full LIMS / Sample Tracking Platforms
 
 
 
-# 1. SENAITE
+# 1. SENAITE [![GitHub_Stars](https://img.shields.io/github/stars/senaite/senaite.lims?style=social&color=white)](https://github.com/senaite/senaite.lims/stargazers)
 
 
 
@@ -411,7 +341,7 @@ Instrument Integration
 
 
 
-# 2. Bika LIMS / Ingwe
+# 2. Bika LIMS / Ingwe [![GitHub_Stars](https://img.shields.io/github/stars/bikalims/bika.lims?style=social&color=white)](https://github.com/bikalims/bika.lims/stargazers)
 
 
 
@@ -503,7 +433,7 @@ Bika's own project documentation describes it as FOSS and emphasizes sample work
 
 
 
-# 3. OpenELIS Global
+# 3. OpenELIS Global 2 [![GitHub_Stars](https://img.shields.io/github/stars/DIGI-UW/OpenELIS-Global-2?style=social&color=white)](https://github.com/DIGI-UW/OpenELIS-Global-2/stargazers)
 
 
 
@@ -575,7 +505,7 @@ Results Management
 
 
 
-# 4. LabKey
+# 4. LabKey Platform [![GitHub_Stars](https://img.shields.io/github/stars/LabKey/platform?style=social&color=white)](https://github.com/LabKey/platform/stargazers)
 
 
 
@@ -647,7 +577,7 @@ Data Integration
 
 
 
-# 5. eLabFTW
+# 5. eLabFTW [![GitHub_Stars](https://img.shields.io/github/stars/elabftw/elabftw?style=social&color=white)](https://github.com/elabftw/elabftw/stargazers)
 
 
 
@@ -721,7 +651,7 @@ eLabFTW is not a direct replacement for a sophisticated enterprise freezer/LIMS 
 
 
 
-# 6. MetaLIMS
+# 6. MetaLIMS [![GitHub_Stars](https://img.shields.io/github/stars/cheinle/MetaLIMS?style=social&color=white)](https://github.com/cheinle/MetaLIMS/stargazers)
 
 
 
@@ -755,7 +685,7 @@ Open-source LIMS project intended for laboratory sample and workflow management.
 
 
 
-# 7. MendeLIMS
+# 7. MendeLIMS [![GitHub_Stars](https://img.shields.io/github/stars/arsene-sabot/MendeLIMS?style=social&color=white)](https://github.com/arsene-sabot/MendeLIMS/stargazers)
 
 
 
@@ -787,7 +717,7 @@ Open-source LIMS project oriented toward laboratory sample and experimental work
 
 
 
-# 8. GNU LIMS
+# 8. GNU LIMS (Occhiolino) [![GitHub_Stars](https://img.shields.io/github/stars/occhiolino/GNU-LIMS?style=social&color=white)](https://github.com/occhiolino/GNU-LIMS/stargazers)
 
 
 
@@ -817,7 +747,7 @@ Open-source LIMS project aimed at laboratory information management.
 
 
 
-# 9. Baobab LIMS
+# 9. Baobab LIMS [![GitHub_Stars](https://img.shields.io/github/stars/BaobabLims/baobab.lims?style=social&color=white)](https://github.com/BaobabLims/baobab.lims/stargazers)
 
 
 
@@ -853,7 +783,7 @@ Open-source LIMS comparisons identify Baobab among the projects covering specime
 
 
 
-# 10. LIMBU / LImBuS
+# 10. LImBuS [![GitHub_Stars](https://img.shields.io/github/stars/AberystwythSystemsBiology/limbus?style=social&color=white)](https://github.com/AberystwythSystemsBiology/limbus/stargazers)
 
 
 
@@ -883,7 +813,7 @@ Open-source laboratory information-management projects oriented toward sample an
 
 
 
-# 11. ERPNext Healthcare / Laboratory Extensions
+# 11. ERPNext Healthcare / Laboratory Extensions [![GitHub_Stars](https://img.shields.io/github/stars/frappe/erpnext?style=social&color=white)](https://github.com/frappe/erpnext/stargazers)
 
 
 
@@ -949,7 +879,7 @@ ERP
 
 
 
-# 12. Odoo + OCA Laboratory Extensions
+# 12. Odoo + OCA Laboratory Extensions [![GitHub_Stars](https://img.shields.io/github/stars/odoo/odoo?style=social&color=white)](https://github.com/odoo/odoo/stargazers)
 
 
 
@@ -1013,11 +943,137 @@ ERP
 
 
 
-# Biobank / Specimen Management
+
+---
+
+# 10b. PyLabRobot (Liquid Handling & Pipetting Robotics) [![GitHub_Stars](https://img.shields.io/github/stars/PyLabRobot/pylabrobot?style=social&color=white)](https://github.com/PyLabRobot/pylabrobot/stargazers)
+
+https://github.com/PyLabRobot/pylabrobot
+
+https://pylabrobot.org/
+
+**PyLabRobot is a universal, hardware-agnostic Python library for controlling liquid handling robots, pipetting stations, and automated sample management workcells.**
+
+It provides high-level abstractions for decks, liquid classes, plates, tip racks, and cherry-picking protocols across Hamilton, Tecan, and Opentrons systems.
+
+### Features
+* Universal robotic liquid handling interface
+* Deck layout & 96/384-well microplate coordinate management
+* Pipetting volume tracking & liquid height sensing
+* Automated sample transfers, serial dilutions & cherry-picking
+* Direct hardware backends and simulation GUI
+* MIT License
+
+---
+
+# 10c. MISO LIMS (Next-Generation Sequencing Sample Tracking) [![GitHub_Stars](https://img.shields.io/github/stars/miso-lims/miso-lims?style=social&color=white)](https://github.com/miso-lims/miso-lims/stargazers)
+
+https://github.com/miso-lims/miso-lims
+
+http://miso-lims.github.io/
+
+**MISO LIMS is an open-source Laboratory Information Management System built specifically for high-throughput Next-Generation Sequencing (NGS) centers.**
+
+It tracks samples from accessioning and QC through library preparation, pooling, flow cell loading, and sequencer run tracking.
+
+### Features
+* NGS sample accessioning, dilution, and QC metrics
+* Library preparation protocols and index tracking
+* Pool creation, flow cell clustering, and run manifests
+* Sequencer integration (Illumina, Oxford Nanopore, PacBio)
+* Barcode printing and tube rack 2D scanning
+* GPL-3.0 License
+
+---
+
+# 10d. Sequencescape (Sanger Institute High-Throughput LIMS) [![GitHub_Stars](https://img.shields.io/github/stars/sanger/sequencescape?style=social&color=white)](https://github.com/sanger/sequencescape/stargazers)
+
+https://github.com/sanger/sequencescape
+
+**Sequencescape is the core sample management and genomics workflow engine developed and operated by the Wellcome Sanger Institute.**
+
+It handles tens of thousands of biospecimens daily, managing plate-based workflows, aliquoting, automated liquid handling interfaces, and sequencing pipelines.
+
+### Features
+* High-throughput 96-well and 384-well plate tracking
+* Liquid handler integration and automated cherry-picking manifests
+* Strict parent-child aliquot lineage and audit logging
+* REST API for robot and pipeline integration
+* MIT License
+
+---
+
+# 10e. iSkyLIMS (Genomics & NGS Laboratory Tracking) [![GitHub_Stars](https://img.shields.io/github/stars/BU-ISCIII/iskylims?style=social&color=white)](https://github.com/BU-ISCIII/iskylims/stargazers)
+
+https://github.com/BU-ISCIII/iskylims
+
+**iSkyLIMS is an open-source, web-based LIMS developed for genomics core facilities, tracking the complete workflow from sample submission to sequencing results.**
+
+### Features
+* Sample submission forms and accessioning validation
+* NGS run parameter tracking and sequencer coordination
+* Automated bioinformatics pipeline triggers
+* Role-based access control and client portals
+* GPL-3.0 License
+
+---
+
+# 10f. SampleDB (Sample & Measurement Metadata Registry) [![GitHub_Stars](https://img.shields.io/github/stars/sciapp/sampledb?style=social&color=white)](https://github.com/sciapp/sampledb/stargazers)
+
+https://github.com/sciapp/sampledb
+
+https://scientific-data.github.io/sampledb/
+
+**SampleDB is a web-based sample and measurement metadata management system for research laboratories and academic institutions.**
+
+### Features
+* Dynamic schema definition for complex scientific samples
+* Sample relationships, lineage trees, and derivation graphs
+* Integrated QR-code and barcode label generator
+* File attachments, chemical formula indexing, and ELN notes
+* Comprehensive REST API and Python client
+* MIT License
+
+---
+
+# 10g. openBIS (Scientific Data & Sample Management Platform) [![GitHub_Stars](https://img.shields.io/github/stars/openbis/community-openbis?style=social&color=white)](https://github.com/openbis/community-openbis/stargazers)
+
+https://github.com/openbis/community-openbis
+
+https://openbis.ch/
+
+**openBIS is an enterprise scientific data management system (SDMS) and sample registry developed by ETH Zurich.**
+
+### Features
+* Combined sample tracking, inventory, and electronic lab notebook
+* Multi-level parent-child sample hierarchy and aliquots
+* Storage manager for cryogenic freezers, shelves, and boxes
+* Powerful metadata indexing and Apache Lucene search
+* Apache-2.0 License
+
+---
+
+# 10h. Autoprotocol Python (Automated Lab Protocols) [![GitHub_Stars](https://img.shields.io/github/stars/autoprotocol/autoprotocol-python?style=social&color=white)](https://github.com/autoprotocol/autoprotocol-python/stargazers)
+
+https://github.com/autoprotocol/autoprotocol-python
+
+https://autoprotocol.org/
+
+**Autoprotocol is an open standard and Python library for specifying formal, machine-readable instructions for automated laboratory experiments, liquid transfers, and sample handling.**
+
+### Features
+* Standardized protocol definitions for pipetting, incubation, centrifuging
+* Container definitions (microplates, cryo-vials, reservoir troughs)
+* Programmable fluidic routing and aliquot transfer manifests
+* Cloud laboratory execution (Strateos, Emerald Cloud Lab)
+* BSD-3-Clause License
+
+
+# 🧬 Biobank / Specimen Management
 
 
 
-# 13. OpenSpecimen
+# 13. OpenSpecimen [![GitHub_Stars](https://img.shields.io/github/stars/krishagni/openspecimen?style=social&color=white)](https://github.com/krishagni/openspecimen/stargazers)
 
 
 
@@ -1105,7 +1161,7 @@ Distribution
 
 
 
-# 14. LabKey Biobanking / Biorepository
+# 14. LabKey Biobanking / Biorepository [![GitHub_Stars](https://img.shields.io/github/stars/LabKey/platform?style=social&color=white)](https://github.com/LabKey/platform/stargazers)
 
 
 
@@ -1139,7 +1195,7 @@ LabKey provides an open platform for scientific and clinical research data, incl
 
 
 
-# 15. Baobab LIMS
+# 15. Baobab LIMS Biobank [![GitHub_Stars](https://img.shields.io/github/stars/BaobabLims/baobab.lims?style=social&color=white)](https://github.com/BaobabLims/baobab.lims/stargazers)
 
 
 
@@ -1203,11 +1259,11 @@ This is often more realistic than trying to force one project to perform every L
 
 
 
-# Laboratory Inventory & Research Management
+# 📦 Laboratory Inventory & Research Management
 
 
 
-# 17. eLabFTW
+# 17. eLabFTW Inventory [![GitHub_Stars](https://img.shields.io/github/stars/elabftw/elabftw?style=social&color=white)](https://github.com/elabftw/elabftw/stargazers)
 
 
 
@@ -1295,7 +1351,7 @@ Barcode system
 
 
 
-# 19. OpenBoxes
+# 19. OpenBoxes [![GitHub_Stars](https://img.shields.io/github/stars/openboxes/openboxes?style=social&color=white)](https://github.com/openboxes/openboxes/stargazers)
 
 
 
@@ -1341,7 +1397,7 @@ Laboratory organizations needing strong inventory infrastructure around their LI
 
 
 
-# 20. PartKeepr
+# 20. PartKeepr [![GitHub_Stars](https://img.shields.io/github/stars/PartKeepr/PartKeepr?style=social&color=white)](https://github.com/PartKeepr/PartKeepr/stargazers)
 
 
 
@@ -1373,7 +1429,7 @@ Although not laboratory-specific, its concepts can be useful for:
 
 
 
-# 21. Grocy
+# 21. Grocy [![GitHub_Stars](https://img.shields.io/github/stars/grocy/grocy?style=social&color=white)](https://github.com/grocy/grocy/stargazers)
 
 
 
@@ -1393,11 +1449,11 @@ It can serve as inspiration or a lightweight inventory component for non-regulat
 
 
 
-# Electronic Lab Notebook + Sample Tracking
+# 📓 Electronic Lab Notebook + Sample Tracking
 
 
 
-# 22. eLabFTW
+# 22. eLabFTW Notebook [![GitHub_Stars](https://img.shields.io/github/stars/elabftw/elabftw?style=social&color=white)](https://github.com/elabftw/elabftw/stargazers)
 
 
 
@@ -1585,13 +1641,11 @@ Particularly useful for:
 
 
 
-# Laboratory Workflow / LIMS Building Blocks
+# 🔄 Laboratory Workflow / LIMS Building Blocks
 
 
 
-# 26. Apache NiFi
-
-
+# 26. Apache NiFi [![GitHub_Stars](https://img.shields.io/github/stars/apache/nifi?style=social&color=white)](https://github.com/apache/nifi/stargazers)
 
 https://github.com/apache/nifi
 
@@ -1641,9 +1695,7 @@ Data Lake
 
 
 
-# 27. Apache Camel
-
-
+# 27. Apache Camel [![GitHub_Stars](https://img.shields.io/github/stars/apache/camel?style=social&color=white)](https://github.com/apache/camel/stargazers)
 
 https://github.com/apache/camel
 
@@ -1677,9 +1729,7 @@ Useful for connecting:
 
 
 
-# 28. Nextflow
-
-
+# 28. Nextflow [![GitHub_Stars](https://img.shields.io/github/stars/nextflow-io/nextflow?style=social&color=white)](https://github.com/nextflow-io/nextflow/stargazers)
 
 https://github.com/nextflow-io/nextflow
 
@@ -1693,9 +1743,7 @@ Workflow engine particularly useful for computational biology and laboratory pip
 
 
 
-# 29. Snakemake
-
-
+# 29. Snakemake [![GitHub_Stars](https://img.shields.io/github/stars/snakemake/snakemake?style=social&color=white)](https://github.com/snakemake/snakemake/stargazers)
 
 https://github.com/snakemake/snakemake
 
@@ -1737,9 +1785,7 @@ Useful for:
 
 
 
-# 31. Temporal
-
-
+# 31. Temporal [![GitHub_Stars](https://img.shields.io/github/stars/temporalio/temporal?style=social&color=white)](https://github.com/temporalio/temporal/stargazers)
 
 https://github.com/temporalio/temporal
 
@@ -1769,7 +1815,7 @@ Useful for:
 
 
 
-# Barcode / QR / Identification
+# 🏷️ Barcode / QR / Identification
 
 
 
@@ -1781,9 +1827,7 @@ Barcode identification is fundamental to sample tracking.
 
 
 
-# 32. ZXing
-
-
+# 32. ZXing [![GitHub_Stars](https://img.shields.io/github/stars/zxing/zxing?style=social&color=white)](https://github.com/zxing/zxing/stargazers)
 
 https://github.com/zxing/zxing
 
@@ -1857,9 +1901,7 @@ Useful for browser/mobile barcode workflows.
 
 
 
-# 36. OpenCV
-
-
+# 36. OpenCV [![GitHub_Stars](https://img.shields.io/github/stars/opencv/opencv?style=social&color=white)](https://github.com/opencv/opencv/stargazers)
 
 https://github.com/opencv/opencv
 
@@ -1901,7 +1943,7 @@ OCR engine useful when sample IDs are printed as text rather than barcodes.
 
 
 
-# Storage & Database Infrastructure
+# 🗄️ Storage & Database Infrastructure
 
 
 
@@ -1913,9 +1955,7 @@ A serious sample-tracking system needs a durable database.
 
 
 
-# 38. PostgreSQL
-
-
+# 38. PostgreSQL [![GitHub_Stars](https://img.shields.io/github/stars/postgres/postgres?style=social&color=white)](https://github.com/postgres/postgres/stargazers)
 
 https://github.com/postgres/postgres
 
@@ -1969,9 +2009,7 @@ Open-source relational database alternative.
 
 
 
-# 40. DuckDB
-
-
+# 40. DuckDB [![GitHub_Stars](https://img.shields.io/github/stars/duckdb/duckdb?style=social&color=white)](https://github.com/duckdb/duckdb/stargazers)
 
 https://github.com/duckdb/duckdb
 
@@ -1995,9 +2033,7 @@ Excellent analytical database for:
 
 
 
-# 41. MinIO
-
-
+# 41. MinIO [![GitHub_Stars](https://img.shields.io/github/stars/minio/minio?style=social&color=white)](https://github.com/minio/minio/stargazers)
 
 https://github.com/minio/minio
 
@@ -2063,13 +2099,11 @@ Columnar storage format useful for large laboratory datasets.
 
 
 
-# Identity & Access Management
+# 🔐 Identity & Access Management
 
 
 
-# 44. Keycloak
-
-
+# 44. Keycloak [![GitHub_Stars](https://img.shields.io/github/stars/keycloak/keycloak?style=social&color=white)](https://github.com/keycloak/keycloak/stargazers)
 
 https://github.com/keycloak/keycloak
 
@@ -2113,9 +2147,7 @@ Open-source IAM platform.
 
 
 
-# 45. Authentik
-
-
+# 45. Authentik [![GitHub_Stars](https://img.shields.io/github/stars/goauthentik/authentik?style=social&color=white)](https://github.com/goauthentik/authentik/stargazers)
 
 https://github.com/goauthentik/authentik
 
@@ -2157,13 +2189,11 @@ Identity-management platform integrating:
 
 
 
-# Analytics & Reporting
+# 📊 Analytics & Reporting
 
 
 
-# 47. Apache Superset
-
-
+# 47. Apache Superset [![GitHub_Stars](https://img.shields.io/github/stars/apache/superset?style=social&color=white)](https://github.com/apache/superset/stargazers)
 
 https://github.com/apache/superset
 
@@ -2197,9 +2227,7 @@ Open-source BI platform.
 
 
 
-# 48. Metabase
-
-
+# 48. Metabase [![GitHub_Stars](https://img.shields.io/github/stars/metabase/metabase?style=social&color=white)](https://github.com/metabase/metabase/stargazers)
 
 https://github.com/metabase/metabase
 
@@ -2213,9 +2241,7 @@ Self-service analytics and dashboards.
 
 
 
-# 49. Grafana
-
-
+# 49. Grafana [![GitHub_Stars](https://img.shields.io/github/stars/grafana/grafana?style=social&color=white)](https://github.com/grafana/grafana/stargazers)
 
 https://github.com/grafana/grafana
 
@@ -2257,7 +2283,7 @@ Useful for:
 
 
 
-# Commercial → Open-Source Mapping
+# 🔄 Commercial → Open-Source Mapping
 
 
 
@@ -2309,7 +2335,7 @@ Useful for:
 
 
 
-# Reference Architecture
+# 🏗️ Reference Architecture
 
 
 
@@ -2415,7 +2441,7 @@ flowchart TB
 
 
 
-# Sample Accessioning Workflow
+# 📥 Sample Accessioning Workflow
 
 
 
@@ -2471,7 +2497,7 @@ sequenceDiagram
 
 
 
-# Sample Lineage Workflow
+# 🧬 Sample Lineage Workflow
 
 
 
@@ -2565,7 +2591,7 @@ Sequencing Data
 
 
 
-# Freezer / Cryostorage Workflow
+# ❄️ Freezer / Cryostorage Workflow
 
 
 
@@ -2625,7 +2651,7 @@ flowchart TB
 
 
 
-# Biobank Workflow
+# 🧪 Biobank Workflow
 
 
 
@@ -2681,7 +2707,7 @@ flowchart LR
 
 
 
-# Capability Matrix
+# 📊 Capability Matrix
 
 
 
@@ -2731,7 +2757,7 @@ flowchart LR
 
 
 
-# Recommended Open-Source Stacks
+# 🚀 Recommended Open-Source Stacks
 
 
 
@@ -3159,7 +3185,7 @@ This is substantially simpler than a full enterprise LIMS.
 
 
 
-# Best Open-Source Choices by Requirement
+# 🎯 Best Open-Source Choices by Requirement
 
 
 
@@ -3211,7 +3237,7 @@ This is substantially simpler than a full enterprise LIMS.
 
 
 
-# What Open Source Can and Cannot Replace
+# ⚖️ What Open Source Can and Cannot Replace
 
 
 
@@ -3409,7 +3435,7 @@ Therefore instrument integration can become one of the largest engineering tasks
 
 
 
-# Why Open Source Is Attractive
+# 💡 Why Open Source Is Attractive
 
 
 
@@ -3547,7 +3573,7 @@ LIMS
 
 
 
-# Sample Data Model
+# 🗃️ Sample Data Model
 
 
 
@@ -4405,7 +4431,7 @@ SciCat
 
 
 
-# Security & Compliance Considerations
+# 🛡️ Security & Compliance Considerations
 
 
 
@@ -4603,7 +4629,7 @@ A project should therefore be selected according to the laboratory's actual oper
 
 
 
-# Important Licensing Considerations
+# 📜 Important Licensing Considerations
 
 
 
@@ -5199,7 +5225,7 @@ rather than trying to force one system to do everything.
 
 
 
-# Conclusion
+# 🏁 Conclusion
 
 
 
@@ -5507,7 +5533,7 @@ Open-source software can provide all of these capabilities, but in many cases th
 
 
 
-# Contributing
+# 🤝 Contributing
 
 
 
@@ -5585,7 +5611,7 @@ Before adding a project, verify:
 
 
 
-# Disclaimer
+# ⚠️ Disclaimer
 
 
 
@@ -5771,11 +5797,6 @@ For someone specifically looking for an **open-source alternative to Benchling /
 
 **SENAITE + OpenSpecimen + eLabFTW/OpenBIS + PostgreSQL + MinIO + Keycloak + Apache NiFi + barcode infrastructure** is one of the most compelling open-source foundations for building a comprehensive, self-hosted laboratory sample-tracking ecosystem.
 
-## Star History
+## 📈 Star History
 
-<a href="https://star-history.com/#ishandutta2007/Awesome-Sample-Tracking-Platform&Timeline" align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/ishandutta2007_Awesome-Sample-Tracking-Platform_growth.svg">
-    <img alt="Star History Chart" src="assets/ishandutta2007_Awesome-Sample-Tracking-Platform_growth.svg">
-  </picture>
-</a>
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Sample-Tracking-Platform&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Sample-Tracking-Platform&type=date&legend=top-left)
