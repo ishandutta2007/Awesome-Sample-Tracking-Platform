@@ -5793,3 +5793,12 @@ For someone specifically looking for an **open-source alternative to Benchling /
 
 
 **SENAITE + OpenSpecimen + eLabFTW/OpenBIS + PostgreSQL + MinIO + Keycloak + Apache NiFi + barcode infrastructure** is one of the most compelling open-source foundations for building a comprehensive, self-hosted laboratory sample-tracking ecosystem.
+
+## Star History
+
+<a href="https://star-history.com/#ishandutta2007/Awesome-Sample-Tracking-Platform&Timeline" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ishandutta2007_Awesome-Sample-Tracking-Platform_growth.svg">
+    <img alt="Star History Chart" src="assets/ishandutta2007_Awesome-Sample-Tracking-Platform_growth.svg">
+  </picture>
+</a>
