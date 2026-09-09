@@ -160,51 +160,28 @@ These are **commercial platforms** and are deliberately kept separate from the o
 
 
 
-| Platform                                                     | Primary Focus                          | Typical Strengths                                                                 |
-
-| ------------------------------------------------------------ | -------------------------------------- | --------------------------------------------------------------------------------- |
-
-| [Benchling](https://www.benchling.com/)                      | R&D platform / ELN / sample management | Research workflows, molecular biology, inventory, samples, data and collaboration |
-
-| [Labguru](https://www.labguru.com/)                          | Research management / LIMS             | Samples, inventory, ELN, protocols, freezer management, research workflows        |
-
-| [FreezerPro](https://www.ruro.com/freezerpro/)               | Sample / freezer management            | Cryostorage, sample inventory, barcodes, locations and tracking                   |
-
-| [OpenSpecimen](https://www.openspecimen.org/)                | Biobank / specimen management          | Biospecimens, collections, consent, storage, distribution and APIs                |
-
-| [LabCollector](https://www.labcollector.com/)                | LIMS / lab inventory                   | Sample tracking, inventory, freezer management, equipment and workflows           |
-
-| [eLabNext](https://www.elabnext.com/)                        | ELN / LIMS                             | Sample management, inventory, workflows, ELN and integrations                     |
-
-| [CloudLIMS](https://cloudlims.com/)                          | Cloud LIMS                             | Sample lifecycle, tests, workflows, inventory, reporting and compliance           |
-
-| [Quartzy](https://www.quartzy.com/)                          | Lab management                         | Inventory, purchasing, supplies, sample/research operations                       |
-
-| [QBench](https://qbench.com/)                                | LIMS                                   | Sample management, workflows, results, reporting and lab operations               |
-
-| [LabVantage](https://www.labvantage.com/)                    | Enterprise LIMS                        | Sample management, workflows, instruments, quality and analytics                  |
-
-| [STARLIMS](https://www.starlims.com/)                        | Enterprise LIMS                        | Laboratory workflows, sample management, instruments, quality                     |
-
-| [LabWare LIMS](https://www.labware.com/)                     | Enterprise LIMS                        | Sample lifecycle, laboratory workflows, instruments and compliance                |
-
-| [Scispot](https://www.scispot.com/)                          | Life-science data platform             | Samples, inventory, workflows, integrations and research data                     |
-
-| [Labii](https://www.labii.com/)                              | LIMS / ELN                             | Sample management, inventory, ELN and workflow automation                         |
-
-| [eLabFTW Cloud](https://www.elabftw.net/)                    | ELN / lab management                   | Experiments, resources, database records and collaboration                        |
-
-| [SciNote](https://www.scinote.net/)                          | ELN / LIMS                             | Experiments, samples, protocols, inventory and collaboration                      |
-
-| [LabKey](https://www.labkey.com/)                            | Research data / LIMS                   | Biospecimens, laboratory data, studies and data integration                       |
-
-| [Sapio Sciences](https://www.sapiosciences.com/)             | LIMS / ELN                             | Sample management, lab workflows, instruments and research                        |
-
-| [Clinisys](https://www.clinisys.com/)                        | Laboratory informatics                 | Clinical and scientific laboratory workflows                                      |
-
-| [STARLIMS](https://www.starlims.com/)                        | Enterprise LIMS                        | Sample, result, instrument and quality management                                 |
-
-| [Thermo Fisher SampleManager](https://www.thermofisher.com/) | Enterprise LIMS                        | Sample lifecycle, laboratory operations and enterprise integration                |
+| Platform | Primary Focus | Starting Price (Specific Tier) | Free Tier & Free Trial Limits (Specific Scope) | Typical Strengths |
+| :--- | :--- | :--- | :--- | :--- |
+| [Benchling](https://www.benchling.com/) | R&D platform / ELN / sample management | **$1,200 / user / year** (~$100/user/month for commercial entry tier; entry team packages from $10,000/year) | **Free forever Academic Plan** (unlimited notebook entries, core molecular biology design tools, 10 GB storage/user); commercial has **14-day interactive trial** | Research workflows, molecular biology, inventory, samples, data and collaboration |
+| [Labguru](https://www.labguru.com/) | Research management / LIMS | **$1,000 / user / year** (~$83.33/user/month for commercial labs; academic lab discounts starting ~$45/user/month) | **14-day free trial** (full access to ELN, inventory, specimen lineage, and protocol execution following sales onboarding; no free forever tier) | Samples, inventory, ELN, protocols, freezer management, research workflows |
+| [FreezerPro](https://www.ruro.com/freezerpro/) | Sample / freezer management | **$79 / user / month** (billed annually at $948/user/year for Cloud Basic; concurrent seats from $149/user/month) | **14-day full-featured cloud trial** (complete freezer location mapping, aliquot lineage, 2D barcode generation, and sample check-in/out; no free forever tier) | Cryostorage, sample inventory, barcodes, locations and tracking |
+| [OpenSpecimen](https://www.openspecimen.org/) | Biobank / specimen management | **$75,000 one-time** + $35,000/year annual support & hosting (Starter Biobank tier; hosted packages from ~$1,500/month) | **Community Edition is 100% free and open source forever** (self-hosted, unlimited samples/users, BSD-3-Clause license); plus **30-day hosted demo trial** | Biospecimens, collections, consent, storage, distribution and APIs |
+| [LabCollector](https://www.labcollector.com/) | LIMS / lab inventory | **$550 / user / year** (~$45.83/user/month for Inventory Pack; LIMS Pack starts at $1,300/user/year; perpetual licenses from $1,800) | **Free forever "Startup Pack"** (self-hosted, capped at 3 users and 1,000 records across modules); plus **30-day full cloud trial** (all modules unlocked) | Sample tracking, inventory, freezer management, equipment and workflows |
+| [eLabNext](https://www.elabnext.com/) | ELN / LIMS | **€14.50 / user / month** (~$16/user/month for eLabInventory; eLabJournal + eLabInventory bundle from €34.95/user/month billed annually) | **30-day full-featured free trial** (unlimited sample items, complete freezer hierarchy, 2D barcode generation, and mobile barcode scanning; no free forever tier) | Sample management, inventory, workflows, ELN and integrations |
+| [CloudLIMS](https://cloudlims.com/) | Cloud LIMS | **$40 / user / month** (Standard package; Lite package from $66–$100/user/month billed annually) | **30-day full-featured free trial** (unrestricted access to sample accessioning, storage visualization, and workflow configuration wizard; no free forever tier) | Sample lifecycle, tests, workflows, inventory, reporting and compliance |
+| [Quartzy](https://www.quartzy.com/) | Lab management | **$50 / month** (Academic tier billed annually at $599/year, or ~$12.41/user/month; Standard Industry starts at $250/month for 5 users) | **14-day free trial** (unrestricted access to lab inventory, order requests, barcode generation, and Quartzy Shop; transitions to read-only post-trial; no free forever tier) | Inventory, purchasing, supplies, sample/research operations |
+| [QBench](https://qbench.com/) | LIMS | **$600 / month** (billed annually at $7,200/year, includes core LIMS and 5 users; additional users ~$100/user/month) | **14-day interactive guided trial** (access to sample accessioning, batch testing workflows, and client reporting portal upon demo; no free forever tier) | Sample management, workflows, results, reporting and lab operations |
+| [LabVantage](https://www.labvantage.com/) | Enterprise LIMS | **~$18,000 / year** (approx. $175/user/month for SaaS entry licenses, typically minimum 5–10 users) | **30-day test-drive pilot environment** (pre-populated with sample datasets, biobanking modules, and analytical test workflows upon consultation; no free forever tier) | Sample management, workflows, instruments, quality and analytics |
+| [STARLIMS](https://www.starlims.com/) | Enterprise LIMS | **~$15,000 / year** (or approx. $150/user/month for mid-market cloud packages) | **30-day evaluation sandbox** (access to preconfigured clinical/biobanking workflows and compliance reporting modules upon demo qualification; no free forever tier) | Laboratory workflows, sample management, instruments, quality |
+| [LabWare LIMS](https://www.labware.com/) | Enterprise LIMS | **$400 / user / month** ($4,800/user/year for LabWare GROW cloud SaaS tier; on-premise base systems from ~$25,000/year) | **30-day cloud pilot sandbox** (guided configuration for standard testing workflows, sample accessioning, and instrument templates; no free forever tier) | Sample lifecycle, laboratory workflows, instruments and compliance |
+| [Scispot](https://www.scispot.com/) | Life-science data platform | **$9,000 / year** ($750/month for Essential tier, includes up to 10 user seats) | **Free forever "Pico" Plan** (for pre-seed biotech startups; basic ELN/LIMS templates, core sample registration, 1 workspace); **14-day free trial** of Essential tier | Samples, inventory, workflows, integrations and research data |
+| [Labii](https://www.labii.com/) | LIMS / ELN | **$49 / user / month** ($479/user/year; academic 50% discount at ~$24.50/user/month; or $0.10/record pay-per-use) | **Free forever plan** (1 user, full table configuration, restricted to 100 records/month); plus **14-day full-feature trial** (renewable annually) | Sample management, inventory, ELN and workflow automation |
+| [eLabFTW Cloud](https://www.elabftw.net/) | ELN / lab management | **€4,985 / year** (~$5,400/year for Deltablot managed instance with up to 128 active users and 500 GB storage) | **Community Edition is 100% free forever** (self-hosted under AGPLv3, unlimited users and storage); plus **30-day hosted evaluation trial** from Deltablot | Experiments, resources, database records and collaboration |
+| [SciNote](https://www.scinote.net/) | ELN / LIMS | **~$3,000 / year** (approx. $25–$39/user/month for Team/Academic plans; GxP/regulated tiers from $5,000+/year) | **Free forever plan for individuals** (1 user, unlimited experiments, 1 GB storage, 50 MB max file upload size); plus **14-day free trial** of Team features | Experiments, samples, protocols, inventory and collaboration |
+| [LabKey](https://www.labkey.com/) | Research data / LIMS | **$6,540 / year** (approx. $545/month for Starter plan, includes 5 users) | **LabKey Community Edition is 100% free forever** (self-hosted, Apache 2.0); Cloud Sample Manager offers a **30-day hosted evaluation trial** | Biospecimens, laboratory data, studies and data integration |
+| [Sapio Sciences](https://www.sapiosciences.com/) | LIMS / ELN | **$350 / user / month** ($4,200/user/year for unified research lab tier) | **14-day to 30-day cloud test sandbox** (includes access to sample tracking, visual freezer designer, and no-code workflow designer upon request; no free forever tier) | Sample management, lab workflows, instruments and research |
+| [Clinisys](https://www.clinisys.com/) | Laboratory informatics | **~$20,000 / year** (approx. $1,500–$2,000/user/year base deployment; annual maintenance contracts starting at ~$16,000/year) | **30-day guided evaluation sandbox** (preconfigured clinical diagnostics, toxicology, and environmental lab workflows upon enterprise qualification; no free forever tier) | Clinical and scientific laboratory workflows, multi-site diagnostics, public health tracking |
+| [Thermo Fisher SampleManager](https://www.thermofisher.com/) | Enterprise LIMS | **~$25,000 / year** (or ~$2,000–$2,500/seat/year entry base license; enterprise deployment packages from $50,000+) | **30-day proof-of-concept trial** (guided sandbox instance with preloaded sample datasets and workflow templates for qualified enterprise teams; no free forever tier) | Sample lifecycle, laboratory operations and enterprise integration |
 
 
 
